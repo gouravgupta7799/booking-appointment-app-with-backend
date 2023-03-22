@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Full Stack Booking Appointment Application</title>
+    <style>
+      .countainer1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .countainer2 {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+        padding: 5%;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80%;
+      }
+
+      .form-input {
+        margin: 10px;
+        padding: 5px;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background: #3781f1;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+
+      #items {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #items-list {
+        display: flex;
+        margin: 10px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="countainer1">
+      <div class="countainer2">
+        <h1>Book Your Appointment by filling this form</h1>
+        <form action="/" method="POST" class="form">
+          <label for="name">Name</label>
+          <input type="text" class="form-input" id="nameInput" placeholder="Name">
+          <label for="email">Email</label>
+          <input type="email" class="form-input" id="emailInput" placeholder="Email">
+          <label for="contact">Contact</label>
+          <input type="text" class="form-input" id="contactInput" placeholder="contact">
+        </form>
+      </div>
+    </div>
+    </div>
+    <button type="submit" id="submitBtn" class="btn">submit</button>
+
+    <ul id="items">
+    </ul>
+
+    <script src="./index.js"></script>
+  </body>
+
+</html>
